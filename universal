@@ -33,17 +33,17 @@ ui:SetColors('streamline')
 
 
 
-local w = ui:NewWindow('phenom speed',250,200)
+local w = ui:NewWindow('Universal Speed',250,200)
 
-local m = w:NewMenu('speed')
-local t = m:NewToggle('toggle speed')
-local s = m:NewSlider('fast slider lololol',1,50,5)
+local m = w:NewMenu('Speed')
+local t = m:NewToggle('Toggle Speed')
+local s = m:NewSlider('Slider',1,50,5)
 
-t:SetTooltip("toggle the fastness")
-s:SetTooltip("the fast number lol")
+t:SetTooltip("Enable the Speed")
+s:SetTooltip("Walkspeed Amount")
 
 m:NewLabel()
-m:NewLabel('by sam and claudio')
+m:NewLabel('by Barbaric Scripts')
 
 s.OnValueChanged:Connect(function(v) 
     speed_amnt = v

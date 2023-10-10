@@ -37,13 +37,13 @@ local w = ui:NewWindow('Universal Speed',250,200)
 
 local m = w:NewMenu('Speed')
 local t = m:NewToggle('Toggle Speed')
-local s = m:NewSlider('Slider',1,50,5)
+local s = m:NewSlider('Slider',1,15,5)
 
 t:SetTooltip("Enable the Speed")
 s:SetTooltip("Walkspeed Amount")
 
 m:NewLabel()
-m:NewLabel('by Barbaric Scripts')
+m:NewLabel('by Ulta')
 
 s.OnValueChanged:Connect(function(v) 
     speed_amnt = v
